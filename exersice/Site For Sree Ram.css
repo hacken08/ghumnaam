@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --p-color:  rgb(238, 167, 179);
+    --p-color:  #f76300;
+    /* --p-color:  #6a34f2; */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+::selection{
+    background-color: var(--p-color);
+    color: white;
+    /* margin: 43px */
+}
+
+.border {
+    border: solid pink;
+}
+
+.float-icon{
+    background-color: var(--p-color);
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 28px;
+    right: 32px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    color: white;
+    font-weight: 600;
+    font-size:12px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.float-icon img{
+    width: 56px;
+
+}
+
+ /* __________ Navigation Bar __________ */
+nav {
+    display: flex;
+    position: sticky;
+    top: 0; 
+    padding: 15px 2vw;
+    padding-left: 2vw;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 19.5px;
+    background-color: white;
+    z-index: 1000; 
+}
+
+nav img{
+    width: 65px;
+}
+
+nav h1{
+    position: relative;
+    right: 265px;
+    top: 5px;
+}
+
+nav ul {
+    gap: 40px;
+    display: flex;
+    list-style: none;
+    /* margin-right: 90px; */
+    text-transform: uppercase;
+    color: #636b52;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+nav li {
+    font-weight: 700;
+    font-size: 15px;
+    /* margin-top: 8px; */
+    cursor: pointer;
+}
+
+nav li:hover {
+    color: #6934ff;
+}
+
+nav ul button {
+    background-color:var(--p-color);
+    padding: 0px 18px;
+    padding-top: 3px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    min-height: 50px;
+    min-width: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    /* margin: 2px 0px */
+}
+
+
+/* __________ Main Content __________ */
+#upper {
+    min-height: 68vh;
+    width: 92.5vw;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#info-btn{
+    min-height: 30vh;
+    width: 31vw;
+    margin: 0px 85px 0px 0px;    
+}
+
+#info-btn h5{
+    color: rgb(238, 167, 179);
+    margin-left: 8px;
+    display: inline;
+    letter-spacing: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+    /* height: 10px; */
+}
+
+#info-btn h1{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 58px;
+    text-transform: capitalize;
+}
+
+#info-btn p {
+    margin: 25px 0px;
+    width: 21vw;
+    color: #ababab;
+    font-weight: 600;
+    font-size: 13.5px
+    /* letter-spacing: -1px; */
+}
+
+#info-btn button{
+    /* margin-top: 20px; */
+    background-color: var(--p-color);
+    padding: 0px 18px;
+    padding-top: 3px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color: white;
+    min-height: 48px;
+    min-width: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1px;
+    /* margin: 2px 0px */
+}
+
+
+#ram {
+    /* padding-right: 120px; */
+    width: 600px;
+    height: 600px;
+    margin: 0px 0px 0px 95px;
+}
+
+
+/* ____________ Ticket section ____________  */
+#ticket-box{
+    margin-left: 150px;
+    display: flex;
+    margin: 30px;
+    padding: 30px;    
+    justify-content: center;
+    align-items: center;
+}
+
+#head-subhead{
+    margin-right: 25px
+}
+
+#ticket-box h3{
+    font-size: 20px;
+    text-transform: capitalize
+}
+
+#ticket-box h4{
+    font-size: 16px;
+    color: #c2c2c2;
+    margin-top: 1px;
+}
+
+/* ...ticket Button, textfield */
+#ticket-book {
+    margin-left: 12%;
+    padding: 50px 40px;
+    display: flex;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    justify-content: center;
+    background-color:  #ffffff;;
+    align-items: center;
+}
+
+#ticket-book button{
+    border: none;
+    padding: 14px 80px;
+    cursor: pointer;
+    width: 5vw;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #39d39f;
+    color: white;
+    font-weight: 500;
+
+}
+
+#ticket-book input{
+    height: 45px;
+    width: 18vw;
+    padding: 0px 12px;
+    margin-bottom: 16px;
+    /* text-align:left; */
+}
+
+#sizedBox{
+    height: 100px;
+}
+
+
+
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>artical card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            font-family: "Work Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #card {
+            background-color: rgb(255, 255, 255);
+            padding: 7px;
+            min-height: 320px;
+            width: 205px;
+            /* border: solid black; */
+            border-radius: 5px;
+            position: absolute;
+            left: 50%;
+            box-shadow: 0px 0px 10px 2px rgba(2px, 0, 1px, 0.1);
+            top: 50%;
+            /* overflow: hidden; */
+            transform: translate(-50%, -50%);
+        }
+
+        #card img{
+            width: inherit;
+            height: 150px;
+            border-radius: 10px;
+        }
+
+        footer{
+            display: flex;
+            margin: 10px 5px;
+            gap: 5px;
+        }
+
+        footer div{
+            border: solid rgba(230, 233, 235, 0.616);
+            color:    rgba(147, 159, 172);
+            border-radius: 10px;
+            font-size: 8px;
+            padding: 5px 5px;
+            font-weight: 600;
+        }
+
+        #card h3{
+            /* font-size  */
+            margin: 5px 5px;
+            /* margin-bottom: 3px; */
+            font-weight: 600;
+        }
+
+        #card p{
+            font-size: 11px;
+            line-height: 17px;
+            margin: 9px 5px;
+            color: rgb(180,188,197);
+            font-weight:500;
+            text-overflow:clip;
+        }
+
+
+        #card button{
+            background-color: rgb(224,239,255);
+            color: rgb(99, 172, 255);
+            margin: 10px auto;
+            margin-top: 14px;
+            border: 0;
+            border-radius: 20px;
+            padding: 9px 15px;
+            font-size: 8px;
+            font-weight: 700;
+            position: relative;
+            display: block;
+            /* left: 62px */
+            /* justify-self: center; */
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(212, 192, 212);">
+    <div id="card">
+        <img src="card pic.png" alt="">
+        <footer>
+            <div>Ayodhya</div>
+            <div>Ram Mandir</div>
+        </footer>
+        <h3>Ram Mandir</h3>
+        <p>
+            Ayodhya is birth place of shree ram.Mera liya shree ram aradhya jinke poojna hi mera jiwan ka udesha hai. 
+            ~Jai Shree Ram
+        </p>
+        <button>Read More</button>
+    </div>
+</body>
+
+</html>
